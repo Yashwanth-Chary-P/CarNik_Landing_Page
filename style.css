@@ -1,183 +1,591 @@
+/* General Styles */
+body {
+    background-color: #1c1c1c;
+    color: whitesmoke !important;
+    font-family: "Noto Sans", sans-serif;
+  }
 
-.navbar-nav a:hover {
-    color: red;
-    background-color: #ffc107;
+/* Body Gradient Background */
+body {
+    background: linear-gradient(135deg, #1c1c1c, #121212, #000000);
+    background-attachment: fixed; /* Ensures the gradient stays fixed while scrolling */
+    color: whitesmoke !important;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures the gradient covers the entire viewport */
+  }
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
 }
 
-h1,h2,h3,h4,h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 570;
     font-style: normal;
   }
-
-
-.p {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-    
   
-
-body {
-    background-color: #1C1C1C;
-    color: whitesmoke !important;
-}
-
-.section-padding {
-    padding:100px 0;
-}
-
-.carousel-item{
+  p {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.041);
+  }
+  
+  .navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100px;
+    border-radius: 18px;
+    text-align: center;
+  }
+  
+  .navbar-nav a:hover {
+    color: red;
+    background-color: #ffc107;
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .navbar .navbar-brand:focus,
+  .navbar .navbar-brand:hover {
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .navbar-link {
+    color: white;
+  }
+  
+  /* Hero Section (Carousel) */
+/* Carousel Section */
+.carousel-item {
     height: 100vh;
     min-height: 300px;
-}
-
-.carousel-caption {
+  }
+  
+  .carousel-caption {
     bottom: 220px;
     z-index: 2;
-}
-
-.carousel-caption h5 {
+  }
+  
+  .carousel-caption h5 {
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
-}
-
-.carousel-caption p{
+    color: white; /* Ensure text is white */
+  }
+  
+  .carousel-caption p {
     width: 60%;
     margin: auto;
     font-size: 18px;
     line-height: 1.9;
-}
-
-.carousel-inner::before {
+    color: white; /* Ensure text is white */
+  }
+  
+  .carousel-inner::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
     z-index: 1;
-}
-
-.navbar-nav a{
-   font-size: 15px;
-   text-transform: uppercase; 
-   font-weight: 500;
-   width: 100px;
-   border-radius: 18px;
-   text-align: center;
-}
-
-.navbar .navbar-brand{
+  }
+  
+  /* Carousel Indicators */
+  .carousel-indicators button {
+    background-color: white; /* White indicators */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #ffc107; /* Yellow for active indicator */
+  }
+  
+  /* Carousel Control Buttons */
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: white; /* White arrow icons */
+    border-color: white; /* White border */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) invert(1); /* Ensure icons are white */
+  }
+  
+  /* Services Section */
+  .services .card-body i {
+    font-size: 50px;
+  }
+  
+  .services .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .services {
+    background-color: black;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #121212;
+    color: whitesmoke;
+    padding: 50px 0;
+  }
+  
+  .footer h4 {
+    color: #ffc107;
+    margin-bottom: 15px;
+  }
+  
+  .footer p,
+  .footer ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links ul li a {
     color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffc107;
+  }
+  
+  .footer-social a {
+    color: white;
+    font-size: 22px;
+    margin-right: 12px;
+    text-decoration: none;
+  }
+  
+  .footer-social a:hover {
+    color: #ffc107;
+  }
+  
+  .footer hr {
+    border-top: 1px solid #ffc107;
+    margin: 20px 0;
+  }
+  
+  .footer .newsletter-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer .newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer .newsletter-form button {
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+      bottom: 30%;
+    }
+    .carousel-caption p {
+      width: 100%;
+    }
+    .carousel-caption h5 {
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+    .carousel-caption p {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .carousel-caption {
+      bottom: 125px;
+    }
+    .carousel-caption h5 {
+      font-size: 17px;
+    }
+    .carousel-caption a {
+      padding: 10px 15px;
+    }
+    .carousel-caption p {
+      width: 100%;
+      line-height: 1.6;
+      font-size: 12px;
+    }
+    .about-text {
+      padding-top: 50px;
+    }
+    .card {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Section Padding and Margins */
+.section-padding {
+    padding: 100px 0; /* Consistent padding for all sections */
+  }
+  
+  /* Alternating Section Background Colors */
+  #home {
+    background-color: #1c1c1c; /* Dark background for hero section */
+  }
+  
+  #services {
+    background-color: #121212; /* Black background for services section */
+  }
+  
+  #about {
+    background-color: #1c1c1c; /* Dark background for about section */
+  }
+  
+  #team {
+    background-color: black; /* Black background for team section */
+  }
+  
+  #contact {
+    background-color: #1c1c1c; /* Dark background for contact section */
+  }
+  
+  /* Footer Background */
+  .footer {
+    background-color: black; /* Slightly lighter black for footer */
+  }
+
+/* Section Margins and Padding */
+.section-padding {
+    padding: 80px 0; /* Adjusted padding for better spacing */
+  }
+  
+  /* Font Styles */
+  h2 {
+    font-size: 2.5rem; /* Larger heading for emphasis */
+    font-weight: 600; /* Semi-bold for better readability */
+    margin-bottom: 20px; /* Space below headings */
+  }
+  
+  p {
+    font-size: 1.1rem; /* Slightly larger paragraph text */
+    line-height: 1.8; /* Improved line spacing */
+    color: #e0e0e0; /* Light gray for better contrast */
+  }
+  
+  /* About Section Styling */
+  .about-text h2 {
+    color: #ffc107; /* Yellow heading for emphasis */
+  }
+  
+  .about-text p {
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  
+/* About Section Image Styling */
+    .about-img img {
+        width: 100%; /* Ensure image fills its container */
+        height: 300px; /* Fixed height for consistency */
+        object-fit: cover; /* Maintain aspect ratio while filling the space */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 193, 7, 0.3); /* Yellow shadow for emphasis */
+    }
+  
+  /* Team Section Image Styling */
+  .team .card img {
+    width: 150px; /* Fixed width for team member images */
+    height: 150px; /* Fixed height for team member images */
+    object-fit: cover; /* Maintain aspect ratio while filling the space */
+    border-radius: 50%; /* Circular images for team members */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 3px solid #ffc107; /* Yellow border for emphasis */
+  }
+  /* Team Section Styling */
+  .team .card {
+    background-color: #1c1c1c; /* Dark background for cards */
+    border: 1px solid #333; /* Subtle border for definition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team .card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.5); /* Yellow shadow on hover */
+  }
+  
+  .team .card-title {
+    color: #ffc107; /* Yellow for team member names */
+  }
+  
+  .team .card-text {
+    color: #e0e0e0; /* Light gray for descriptions */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #121212; /* Darker footer background */
+    color: #e0e0e0; /* Light gray text for contrast */
+  }
+  
+  .footer h4 {
+    color: #ffc107; /* Yellow headings in footer */
+  }
+  
+  .footer-links ul li a {
+    color: #e0e0e0; /* Light gray links */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffc107; /* Yellow on hover */
+  }
+  
+  .footer-social a {
+    color: #e0e0e0; /* Light gray social icons */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #ffc107; /* Yellow on hover */
+  }
+  
+  .footer .newsletter-form input {
+    background-color: #1c1c1c; /* Dark input background */
+    border: 1px solid #333; /* Subtle border */
+    color: #e0e0e0; /* Light gray text */
+  }
+  
+  .footer .newsletter-form button {
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer .newsletter-form button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media only screen and (max-width: 767px) {
+    .section-padding {
+      padding: 60px 0; /* Reduced padding for small screens */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Smaller heading for small screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Smaller paragraph text for small screens */
+    }
+  
+    .team .card {
+      margin-bottom: 20px; /* Space between cards on small screens */
+    }
+  }
+
+
+
+  /* Gallery Section Styling */
+.gallery .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333; /* Subtle border for definition */
+  }
+  
+  .gallery .card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.5); /* Yellow shadow on hover */
+  }
+  
+  .gallery .card img {
+    height: 200px; /* Fixed height for gallery images */
+    object-fit: cover; /* Maintain aspect ratio while filling the space */
+  }
+  
+  .gallery .card-title {
+    color: #ffc107; /* Yellow for card titles */
+  }
+  
+  .gallery .card-text {
+    color: #e0e0e0; /* Light gray for card text */
+  }
+  
+  /* Modal Styling */
+  .modal-content {
+    background-color: #1c1c1c; /* Dark background for modals */
+    color: #e0e0e0; /* Light gray text for modals */
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #333; /* Subtle border for modal header */
+  }
+  
+  .modal-title {
+    color: #ffc107; /* Yellow for modal titles */
+  }
+  
+  .modal-body img {
+    width: 100%; /* Ensure image fills the modal */
+    border-radius: 10px; /* Rounded corners for modal images */
+  }
+
+/* Contact Section Styling */
+.contact .form-control {
+    background-color: #1c1c1c; /* Dark input background */
+    border: 1px solid #333; /* Subtle border */
+    color: #e0e0e0; /* Light gray text */
+  }
+  
+  .contact .form-control:focus {
+    border-color: #ffc107; /* Yellow border on focus */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Yellow glow on focus */
+  }
+  
+  .contact .btn-warning {
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact .btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Map Section Styling */
+  .map-section iframe {
+    border-radius: 10px; /* Rounded corners for map */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3); /* Yellow shadow for emphasis */
+  }
+
+  /* Testimonials Section Styling */
+.testimonials .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333; /* Subtle border for definition */
+  }
+  
+  .testimonials .card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.5); /* Yellow shadow on hover */
+  }
+  
+  .testimonials .card-text {
+    font-style: italic; /* Italicize testimonial text */
+  }
+  
+  .testimonials .card-title {
+    color: #ffc107; /* Yellow for customer names */
+  }
+  
+  /* Call-to-Action Section Styling */
+  .cta {
+    background-color: #1c1c1c; /* Dark background for CTA */
+  }
+  
+  .cta h2 {
+    color: #ffc107; /* Yellow heading for emphasis */
+  }
+  
+  .cta .btn-warning {
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta .btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+
+  /* Navigation Bar */
+.navbar {
+    background: linear-gradient(90deg, #1c1c1c 0%, #121212 100%); /* Gradient background */
+    border-bottom: 2px solid rgba(255, 193, 7, 0.1); /* Subtle border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .navbar.scrolled {
+    background: #1c1c1c; /* Solid background on scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow on scroll */
+  }
+  
+  .navbar-brand {
+    color: white !important;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-}
-
-.navbar .navbar-brand:focus,
-.navbar .navbar-brand:hover{
-    color: white;
-}
-
-.navbar-light .navbar-nav .navbar-link{
-    color: white;
-}
-
-.w-100{
-    height: 100vh;
-}
-
-/* responsive css */
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .carousel-caption{
-        bottom: 30%;
+  }
+  
+  .navbar-brand:hover {
+    color: #ffc107 !important; /* Yellow on hover */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 10px; /* Space between links */
+    padding: 8px 15px; /* Padding for clickable area */
+    border-radius: 18px; /* Rounded corners */
+    color: white !important;
+    transition: all 0.3s ease; /* Smooth hover effects */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Yellow on hover */
+    background-color: rgba(255, 193, 7, 0.1); /* Light yellow background on hover */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ffc107 !important; /* Yellow for active link */
+    background-color: rgba(255, 193, 7, 0.1); /* Light yellow background for active link */
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+      margin: 5px 0; /* Stack links vertically on small screens */
+      text-align: center; /* Center-align links */
     }
-    .carousel-caption p {
-        width: 100%;
-    }
-    .img-area img {
-        width: 100%;
-    }
-    .carousel-caption h5 {
-        font-size: 30px;
-        letter-spacing: 1px;
-    }
-    
-    .carousel-caption p{
-        font-size: 18px;
-    }
-
-}
-
-
-@media only screen and (max-width: 767px) {
-    .navbar-nav{
-        text-align: center;
-    }
-    .carousel-caption{ 
-        bottom: 125px;
-    }
-    .carousel-caption h5{
-        font-size: 17px;
-    }
-    .carousel-caption a{
-        padding: 10px 15px;
-    }
-    .carousel-caption P{
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
-    }
-    .about-text {
-        padding-top : 50px
-    }
-    .card {
-        margin-bottom: 30px;
-    }
-}
-
-.image {
-    height: 10px;
-    width: auto;
-    border-color: #ffc107;
-    border: 20px;
-}
-
-.services .card-body i{
-    font-size: 50px;
-}
-
-
-
-.portfolio .card{
-    box-shadow: 15px 15px 40px rgba(0,0,0,00.15);
-}
-
- .card{
-    box-shadow: 15px 15px 40px rgba(0,0,0,00.15);
-}
-
-.img-fluid,.rounded-circle img {
-    height: 220px;
-}
-
-.services {
-    background-color: black;
-}
-
-.contact {
-    background-color: black;
-}
-
-.carousel-item h5,p{
-    color: white;
-}
+  }

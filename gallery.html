@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARNIK - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="./assets/logo.webp"
+              alt="CARNIK Logo"
+              class="logo"
+              style="border-radius: 50%; border: 1px solid rgba(0,0,0,00.15);"
+            />
+            <span class="text-warning">CAR</span>NIK
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-heading text-center">
+            <h2>Gallery</h2>
+            <p>
+              Explore our collection of high-performance and luxury vehicles.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <!-- Image 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/image1.jpg"
+                class="card-img-top"
+                alt="Car Image 1"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxury Sedan</h5>
+                <p class="card-text">Experience elegance and performance.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/image7.jpg"
+                class="card-img-top"
+                alt="Car Image 2"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sporty Convertible</h5>
+                <p class="card-text">Feel the thrill of the open road.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/images3.webp"
+                class="card-img-top"
+                alt="Car Image 3"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Family SUV</h5>
+                <p class="card-text">Spacious and reliable for every journey.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/image4.jpeg"
+                class="card-img-top"
+                alt="Car Image 4"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Efficient Hybrid</h5>
+                <p class="card-text">Eco-friendly and powerful.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/image5.jpeg"
+                class="card-img-top"
+                alt="Car Image 5"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxury Coupe</h5>
+                <p class="card-text">Style and performance combined.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Image 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="./assets/image6.jpeg"
+                class="card-img-top"
+                alt="Car Image 6"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Off-Road Adventure</h5>
+                <p class="card-text">Built for rugged terrains.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modals -->
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="imageModal1"
+      tabindex="-1"
+      aria-labelledby="imageModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal1Label">Luxury Sedan</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/image1.jpg"
+              class="img-fluid"
+              alt="Car Image 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for other modals (Modal 2 to Modal 6) -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-about">
+            <h4>About CARNIK</h4>
+            <p>
+              CARNIK is your trusted destination for luxury and high-performance
+              vehicles. We offer a premium selection of cars, top-tier services,
+              and a seamless buying experience.
+            </p>
+          </div>
+          <div class="col-md-4 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">index</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p>© 2025 CARNIK. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
